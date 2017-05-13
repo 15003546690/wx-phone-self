@@ -1,0 +1,116 @@
+/* pages/jh/jh.wxss */
+ .container 
+ { 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+    box-sizing: border-box;
+ }
+
+/*整体列表*/
+.carts-list 
+{ 
+    display: flex; 
+    flex-direction: column; 
+    padding: 20rpx 40rpx; 
+    margin-bottom: 80rpx;
+    padding: 0 40rpx;
+}
+
+/*每行单元格 width属性解决标题文字太短而缩略图偏移 */
+.carts-item 
+ { 
+    display: flex; 
+    flex-direction: row; 
+    height:150rpx;  
+    width:100%; border-bottom: 1px solid #eee; 
+    padding: 30rpx 0;
+}
+
+/*左部图片*/
+.carts-image 
+{ 
+    width:150rpx; 
+    height:150rpx; 
+}
+
+/*右部描述*/ 
+.carts-text
+ { 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+/*右上部分标题*/
+ .carts-title
+  { 
+    margin: 10rpx; 
+    font-size: 30rpx;
+  }
+
+/*右下部分价格与数量*/ 
+.carts-subtitle 
+{ 
+     font-size: 25rpx;
+     color:darkgray; 
+     padding: 0 20rpx; 
+     display: flex; 
+     flex-direction: row;
+     justify-content:space-between;
+ }
+
+/*价格*/
+.carts-price 
+{ 
+    color: #f60;
+    font-size: 12px;
+ } 
+ /*复选框样式*/
+.carts-list icon 
+{
+    margin-top: 60rpx;
+    margin-right: 20rpx;
+}
+/*底部按钮*/
+.carts-footer
+ { 
+    width: 100%;
+    height: 80rpx; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px #eee solid;
+ }
+
+/*复选框*/
+.carts-footer icon 
+{ 
+    margin-left: 20rpx;
+ }
+
+ /*全选字样*/  
+ .carts-footer text 
+ { 
+    font-size: 30rpx;
+     margin-left: 8rpx;
+      line-height: 10rpx;
+ }
+
+ /*立即结算按钮*/  
+ .carts-footer .button
+  { 
+    line-height: 80rpx; 
+    text-align: center;
+    width:220rpx; 
+    height: 80rpx;
+    background-color: #f60; 
+    color: white; 
+    font-size: 36rpx; 
+    border-radius: 0; border: 0; 
+  }
