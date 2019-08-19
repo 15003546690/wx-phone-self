@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="table">
+    <view wx:for="{{userList}}" class="user-item {{item.className}}" wx:key="index" bindtap="handleUserItemTap">
+    <!-- <view class="compare-card">比牌</view> -->
+    </view>
+    <view class="ready-btn"
+          bindtap="handleReadyBtnClick"
+          animation="{{readyAni}}">ready
+    </view>
+    <view class="card-list" animation="{{cardAni}}">
+      <view wx:for="{{currentCard}}" class="current-card-item">
+        <view class="card-background" animation="{{cardBackAni}}">
+          <image src="../../image/card_background.jpg"></image>
+        </view>
+        <view class="card-face" animation="{{cardFaceAni}}">
+          <view class="card-title" style="color: {{(item.type === 'heart' || item.type === 'diamond') ? '#E70012':'#010101'}}">
+            {{item.title}}
+          </view>
+          <view class="card-type">
+            <image src="{{'../../image/' + item.type + '.jpg'}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="tool-bar">
+    <view class="baritem item-self">
+      <view>
+        <image src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <view>{{userInfo.nickName}}</view>
+    </view>
+    <view class="bar-item item-btn" bindtap="handleOpenCard" wx:if="{{isShowOpenBtn}}">开牌</view>
+  </view>
+</view>
+<view class="markview" wx:if=""></view>

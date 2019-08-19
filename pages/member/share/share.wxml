@@ -1,4 +1,0 @@
-<text class="desc">
-	111
-</text>
-<image src="https://lendoo.leanapp.cn/index.php/WXPay/getQRCode?uid={{123456}}" mode="widthFix" />

@@ -1,48 +1,11 @@
-<!--index.wxml-->
-<view class="container">
-  <scroll-view class="scroll-container" upper-threshold="{{sortPanelDist}}" bindscroll="onToTop" scroll-y="true" style="height:calc(100% - 1px)">
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-height">
-        <block wx:for="{{imgUrls}}">
-            <swiper-item>
-                <image src="{{item}}" class="slide-image" style="height:{{windowWidth * 0.375}}px !important"/>
-            </swiper-item>
-        </block>
-    </swiper>
-    <view class="category-panel">
-        <view class="category-item">
-            <image class="category-item-image" src="../resources/images/ic_index_tab_kind.png" />
-            <text class="category-item-text">分类</text>
-        </view>
-        <view class="category-item">
-            <image class="category-item-image" src="../resources/images/ic_index_tab_ten.png" />
-            <text class="category-item-text">优选</text>
-        </view>
-        <view class="category-item">
-            <image class="category-item-image" src="../resources/images/ic_index_tab_share.png" />
-            <text class="category-item-text">晒单</text>
-        </view>
-        <view class="category-item">
-            <image class="category-item-image" src="../resources/images/ic_index_tab_qa.png" />
-            <text class="category-item-text">常见问题</text>
-        </view>
+<view class="index-view">
+  <view class="index-inner">
+    <view class="index-view__header"></view>
+    <view class="index-view_main">
+      <view class="tool-view">
+        <view class="tool-btn" bindtap="handleSetting">设置</view>
+        <view class="tool-btn" bindtap="handleStartGame">进入</view>
+      </view>
     </view>
-   
-    <view class="sort-panel" style="position:{{sortPanelPos}};top:{{sortPanelTop}}px">
-        <view class="sort-item">人气</view>
-        <view class="sort-item">最新</view>
-        <view class="sort-item">进度</view>
-        <view class="sort-item comb on">
-            <view class="comb-text">限时秒杀</view>
-            <view class="comb-arrs down">
-                <image class="comb-arr-up" src=""></image>
-                <image class="comb-arr-down" src=""></image>
-            </view>
-        </view>
-    </view>
-    <view class="goods-panel">
-        <import src="tpl/goodsList.wxml"/>
-        <template is="goodsList" data="{{goodsList:goodsList}}"/>
-    </view>
-  </scroll-view>
-  <view class="tabbar-border"></view>
+  </view>
 </view>

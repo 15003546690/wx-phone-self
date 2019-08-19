@@ -1,8 +1,0 @@
-
-<text class="value">{{value}}</text>
-<scroll-view scroll-x="true" bindscroll="bindscroll" scroll-left="{{scrollLeft}}">
-	<canvas canvas-id="canvas-ruler" id="canvas-ruler" style="height: {{canvasHeight}}px; width: {{canvasWidth}}px;"></canvas>
-</scroll-view>
-<canvas canvas-id="canvas-cursor" id="canvas-cursor"></canvas>
-
-<button type="primary" bindtap="donateButtonTapped">支付</button>

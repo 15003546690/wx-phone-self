@@ -1,18 +1,19 @@
-// pages/logs/logs.js
+// pages/setting/setting.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    userCount: app.data.userCount
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
@@ -62,15 +63,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  handleStartGame: function () {
-    wx.navigateTo({
-      url: '/pages/room/room'
-    })
-  },
-  handleSetting: function () {
-    wx.navigateTo({
-      url: '/pages/setting/setting'
-    })
   }
 })

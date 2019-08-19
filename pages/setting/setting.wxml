@@ -1,0 +1,14 @@
+<view class="setting-view">
+  <view>
+    <view>设置人数</view>
+    <view class="setting-usercount">
+      <radio-group bindchange="handleSettingUserCountChange">
+        <label class="radio">
+          <radio value="2" checked="true">2</radio>
+          <radio value="4">4</radio>
+          <radio value="6">6</radio>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+</view>

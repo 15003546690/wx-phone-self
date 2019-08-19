@@ -62,15 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  handleStartGame: function () {
-    wx.navigateTo({
-      url: '/pages/room/room'
-    })
-  },
-  handleSetting: function () {
-    wx.navigateTo({
-      url: '/pages/setting/setting'
-    })
   }
 })

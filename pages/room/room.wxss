@@ -1,0 +1,166 @@
+/* pages/index/index.wxss */
+.container {
+  font-size: 22rpx;
+  height: 100%;
+  width: 100%;
+  padding: 15% 20% 0rpx 20%;
+  background: whitesmoke;
+}
+.table {
+  position: relative;
+  display: flex;
+  margin-top: 15%;
+  height: 80%;
+  width: 100%;
+  background: #DAA55A;
+  border-radius: 30%;
+}
+/* 桌子上的用户 */
+.user-item {
+  position: absolute;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 10rpx;
+  background:	PaleVioletRed;
+}
+/* 比牌按钮样式 */
+.compare-card {
+  position: absolute;
+  bottom: -50rpx;
+  left: 0px;
+  text-align: center;
+  height: 50rpx;
+  width: 100%;
+  border-radius: 5rpx;
+  background: orange;
+  color: whitesmoke;
+}
+.user-top {
+  top: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.user-left-top {
+  top: 25%;
+  left: -10%;
+}
+.user-left-bottom {
+  bottom: 25%;
+  left: -10%;
+}
+.user-bottom {
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.user-right-top {
+  bottom: 25%;
+  right: -10%;
+}
+.user-right-bottom {
+  top: 25%;
+  right: -10%;
+}
+.ready-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80rpx;
+  width: 180rpx;
+  text-align: center;
+  line-height: 75rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  border: 1rpx solid rgb(3, 1, 1);
+  border-radius: 5px;
+}
+.tool-bar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0rpx;
+  left: 0rpx;
+  height: 100rpx;
+  width: 100%;
+  background: black;
+}
+.item-self {
+  height: 150rpx;
+  width: 20%;
+  margin-top: -50rpx;
+  overflow: hidden;
+}
+.item-btn {
+  height: 100%;
+  width: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: white;
+}
+.item-self view {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.item-self image {
+  height: 110rpx;
+  width: 110rpx;
+  border: 1px solid gold;
+}
+.card-list {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+}
+.current-card-item {
+  position: relative;
+  height: 100rpx;
+  width: 80rpx;
+  border-radius: 5px;
+  margin-right: 10rpx;
+  overflow: hidden;
+}
+.card-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+}
+.card-background image {
+  height: 100%;
+  width: 100%;
+}
+.card-face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  padding: 5rpx;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.card-title {}
+.card-type {
+  text-align: right;
+}
+.card-type image {
+  height: 50rpx;
+  width: 30rpx;
+}
+
+/* 遮罩层 */
+.markview {
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+}

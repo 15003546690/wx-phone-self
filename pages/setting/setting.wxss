@@ -1,0 +1,9 @@
+.setting-view {
+  height: 100%;
+  width: 100%;
+  padding: 10rpx;
+}
+.setting-usercount {}
+.setting-usercount radio {
+  margin-right: 30rpx;
+}
